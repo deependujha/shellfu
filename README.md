@@ -11,8 +11,14 @@
 Clone the repo:
 
 ```bash
-git clone https://github.com/deependujha/shellfu.git ~/.shellfu
+git clone https://github.com/deependujha/shellfu.git ~/.shellfu \
+&& cd ~/.shellfu \
+&& make setup
 ```
+
+---
+
+## Configuration
 
 Add this to your `~/.bashrc` or `~/.zshrc`:
 
