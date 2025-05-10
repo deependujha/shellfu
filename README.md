@@ -20,6 +20,8 @@ git clone https://github.com/deependujha/shellfu.git ~/.shellfu \
 
 ## Configuration
 
+> don't need to do this if you used `make setup`
+
 Add this to your `~/.bashrc` or `~/.zshrc`:
 
 ```bash
