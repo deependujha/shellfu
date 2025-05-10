@@ -13,7 +13,8 @@ Clone the repo:
 ```bash
 git clone https://github.com/deependujha/shellfu.git ~/.shellfu \
 && cd ~/.shellfu \
-&& make setup
+&& make setup \
+&& cd - # Return to the previous directory
 ```
 
 ---
