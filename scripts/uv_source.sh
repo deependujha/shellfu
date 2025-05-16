@@ -50,6 +50,6 @@ editinstall() {
   source "$activate_path"
 
   # Do editable install
-  echo "📦 Installing current project in editable mode with [all] extras"
+  echo "📦 Installing current project in editable mode"
   uv pip install -e .
 }
