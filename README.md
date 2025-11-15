@@ -11,8 +11,9 @@
 Clone the repo:
 
 ```bash
-git clone https://github.com/deependujha/shellfu.git ~/.shellfu \
-&& cd ~/.shellfu \
+mkdir ~/externals
+git clone https://github.com/deependujha/shellfu.git ~/externals/shellfu \
+&& cd ~/externals/shellfu \
 && make setup \
 && cd - # Return to the previous directory
 ```
@@ -27,7 +28,7 @@ Add this to your `~/.bashrc` or `~/.zshrc`:
 
 ```bash
 # Load all shellfu scripts automatically
-SCRIPT_DIR="$HOME/.shellfu/scripts"
+SCRIPT_DIR="$HOME/externals/shellfu/scripts"
 
 if [ -d "$SCRIPT_DIR" ]; then
   for script in "$SCRIPT_DIR"/*.sh; do

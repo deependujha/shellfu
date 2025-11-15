@@ -1,5 +1,17 @@
 #!/bin/sh
 
+# Git helper commands
+
+alias gc='git add .; git commit'
+alias gcu='git add .; git commit -m "update"'
+alias gcp='git add .; git commit -m "update"; git push'
+alias gcl='git diff'
+alias gsync='git checkout main && (git remote | grep -q "^upstream$" && git pull upstream main || git pull origin main) && git push origin main'
+alias gmsync="git checkout master && git pull upstream master && git push origin master"
+alias gl='git log --oneline'
+alias clean="yes '' | head -n 1000; clear"
+
+
 # Git helper functions
 
 # Check if a git repository is clean
