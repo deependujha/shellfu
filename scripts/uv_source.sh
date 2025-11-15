@@ -9,6 +9,10 @@ ensure_uvenv_dir() {
   fi
 }
 
+listenv() {
+  ls $HOME/.uvenv
+}
+
 sourceenv() {
   if [ -z "$1" ]; then
     echo "Usage: sourceenv <env_name>"
