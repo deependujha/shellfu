@@ -47,3 +47,4 @@ gpush () {
 gstatus () {
     git status
 }
+
