@@ -1,6 +1,10 @@
 #!/bin/sh
 
+
 # assumes all your uv virutalenv are stored in `~/.uvenv`
+
+alias act="source .venv/bin/activate"
+
 ensure_uvenv_dir() {
   local uvenv_dir="$HOME/.uvenv"
   if [[ ! -d "$uvenv_dir" ]]; then
